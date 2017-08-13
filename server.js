@@ -49,6 +49,13 @@ app.get('/about', (req, res) => {
 	})
 })
 
+app.get('/portfolio', (req, res) => {
+	res.render('portfolio.hbs', {
+		pageTitle: 'Portofolio',
+		someParagraph: 'Here you will find my portfolio soon...'
+	})
+})
+
 app.get('/bad', (req, res) => {
 	res.send({
 		errorMessage: "This is an error"
